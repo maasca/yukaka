@@ -10,13 +10,7 @@
   </head>
   <header>
     <div class="container" id="enTeteContainer">
-      <!-- <img
-        src="img/18576-batman-vetement-logo_e1e8993c-df65-4bcf-a079-f9c7e94f5cd4_800x.webp"
-        alt="logo"
-        title="logo"
-        id="logo"
-      /> -->
-      <h1 id="logo">YKK</h1>
+      <img src="img/1276356921.png" alt="logo" title="logo" id="logo" />
       <input
         type="text"
         class="form-control"
@@ -26,77 +20,81 @@
         rows="1"
         title="recherche"
       />
-      <button type="submit" class="btn" title="Rechercher" id="rechercher">
+      <button type="submit" class="btn" title="rechercher" id="rechercher">
         Rechercher
       </button>
     </div>
   </header>
   <body>
-    <div class="container" id="cardsContainer">
-      <div class="card" id="nutriscoreCard" title="nutriscore">
-        <img
-          src="img/1200px-Nutri-score-A_light_background_logo.svg.png"
-          alt="nutriscore"
-          title="nutriscore"
-          id="nutriscoreLogo"
-        />
-        <h2>Nutri-score</h2>
+    <div class="container" id="content">
+      <div class="container" id="cardsContainer">
+        <div class="card" id="nutriscoreCard" title="nutriscore">
+          <img
+            type="image"
+            src="#"
+            alt="nutriscore"
+            title="nutriscore"
+            id="nutriscoreLogo"
+          />
+          <!-- <h2>Nutri-score</h2> -->
+        </div>
+        <div class="card" id="ecoscoreCard" title="ecoscore">
+          <img
+            type="image"
+            src="#"
+            alt="ecoscore"
+            title="ecoscore"
+            id="ecoscoreLogo"
+          />
+          <!-- <h2>Eco-score</h2> -->
+        </div>
+        <div class="card" id="novaCard" title="nova">
+          <img type="image" src="#" alt="nova" title="nova" id="novaLogo" />
+          <!-- <h2>Nova</h2> -->
+        </div>
       </div>
-      <div class="card" id="ecoscoreCard" title="ecoscore">
-        <img
-          src="img/ecoscore-b.svg"
-          alt="ecoscore"
-          title="ecoscore"
-          id="ecoscoreLogo"
-        />
-        <h2>Eco-score</h2>
-      </div>
-      <div class="card" id="novaCard" title="nova">
-        <img src="img/nova.png" alt="nova" title="nova" id="novaLogo" />
-        <h2>Nova</h2>
-      </div>
-    </div>
-
-    <div class="container" id="tableContainer">
-      <div id="imgProduit">
-        <img
-          src="img/media.auchan.jpg"
-          alt="imageProduit"
-          title="image produit"
-          id="imageProduit"
-        />
-      </div>
-      <div class="table">
-        <table title="composants">
-          <thead>
+      <div class="container" id="tableContainer">
+        <div id="imgProduit">
+          <img
+            type="image"
+            src="#"
+            alt="imageProduit"
+            title="image produit"
+            id="imageProduit"
+          />
+        </div>
+        <div class="table">
+          <table title="composants">
+            <thead>
+              <tr>
+                <th colspan="2">Composants</th>
+              </tr>
+            </thead>
             <tr>
-              <th colspan="2">Composants</th>
+              <td></td>
+              <td>
+                Quantité <br />
+                pour 100g
+              </td>
             </tr>
-          </thead>
-          <tr>
-            <td></td>
-            <td>
-              Quantité <br />
-              pour 100g
-            </td>
-          </tr>
-          <tr>
-            <td>Graisses</td>
-            <td><output id="qteGraisses"></output></td>
-          </tr>
-          <tr>
-            <td>Sel</td>
-            <td><output id="qteSel"></output></td>
-          </tr>
-          <tr>
-            <td>Graisses saturées</td>
-            <td><output id="qteGraissesSaturees"></output></td>
-          </tr>
-          <tr>
-            <td>Sucre</td>
-            <td><output id="qteSucre"></output></td>
-          </tr>
-        </table>
+            <tr>
+              <td>Graisses</td>
+              <td><output id="qteGraisses"></output></td>
+            </tr>
+            <tr>
+              <td>Sel</td>
+              <td><output id="qteSel"></output></td>
+            </tr>
+            <tr>
+              <td>Graisses saturées</td>
+              <td><output id="qteGraissesSaturees"></output></td>
+            </tr>
+            <tr>
+              <td>Sucre</td>
+              <td><output id="qteSucre"></output></td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </body>
@@ -117,6 +115,14 @@
           >
         </li>
       </ul>
+      <p>
+        Important : nous avons besoin de votre soutien ! Open Food Facts est un
+        projet collaboratif construit par des dizaines de milliers de bénévoles
+        et géré par une organisation à but non lucratif avec 4 employés. Nous
+        avons besoin de vos dons pour financer le budget 2022 d'Open Food Facts
+        et pour continuer à développer le projet. Merci ! ❤️
+      </p>
+      <button class="btn" title="bouton donner" id="donner">Donner</button>
     </div>
   </footer>
   <script src="script.js"></script>
