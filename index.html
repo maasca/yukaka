@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yukaka</title>
+  </head>
+  <header>
+    <div class="container" id="enTeteContainer">
+      <!-- <img
+        src="img/18576-batman-vetement-logo_e1e8993c-df65-4bcf-a079-f9c7e94f5cd4_800x.webp"
+        alt="logo"
+        title="logo"
+        id="logo"
+      /> -->
+      <h1 id="logo">YKK</h1>
+      <input
+        type="text"
+        class="form-control"
+        name="Recherche"
+        id="recherche"
+        cols="20"
+        rows="1"
+        title="recherche"
+      />
+      <button type="submit" class="btn" title="Rechercher" id="rechercher">
+        Rechercher
+      </button>
+    </div>
+  </header>
+  <body>
+    <div class="container" id="cardsContainer">
+      <div class="card" id="nutriscoreCard" title="nutriscore">
+        <img
+          src="img/1200px-Nutri-score-A_light_background_logo.svg.png"
+          alt="nutriscore"
+          title="nutriscore"
+          id="nutriscoreLogo"
+        />
+        <h2>Nutri-score</h2>
+      </div>
+      <div class="card" id="ecoscoreCard" title="ecoscore">
+        <img
+          src="img/ecoscore-b.svg"
+          alt="ecoscore"
+          title="ecoscore"
+          id="ecoscoreLogo"
+        />
+        <h2>Eco-score</h2>
+      </div>
+      <div class="card" id="novaCard" title="nova">
+        <img src="img/nova.png" alt="nova" title="nova" id="novaLogo" />
+        <h2>Nova</h2>
+      </div>
+    </div>
+
+    <div class="container" id="tableContainer">
+      <div id="imgProduit">
+        <img
+          src="img/media.auchan.jpg"
+          alt="imageProduit"
+          title="image produit"
+          id="imageProduit"
+        />
+      </div>
+      <div class="table">
+        <table title="composants">
+          <thead>
+            <tr>
+              <th colspan="2">Composants</th>
+            </tr>
+          </thead>
+          <tr>
+            <td></td>
+            <td>
+              Quantité <br />
+              pour 100g
+            </td>
+          </tr>
+          <tr>
+            <td>Graisses</td>
+            <td><output id="qteGraisses"></output></td>
+          </tr>
+          <tr>
+            <td>Sel</td>
+            <td><output id="qteSel"></output></td>
+          </tr>
+          <tr>
+            <td>Graisses saturées</td>
+            <td><output id="qteGraissesSaturees"></output></td>
+          </tr>
+          <tr>
+            <td>Sucre</td>
+            <td><output id="qteSucre"></output></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container" id="piedDePage">
+      <ul class="list-inline" id="listePDP" title="pied de page">
+        <li class="list-inline-item">
+          <a href="#" title="à propos">A propos</a>
+        </li>
+        <li class="list-inline-item">&middot;</li>
+        <li class="list-inline-item">
+          <a href="#" title="vie privée">Vie privée</a>
+        </li>
+        <li class="list-inline-item">&middot;</li>
+        <li class="list-inline-item">
+          <a href="#" title="conditions d'utilisations"
+            >conditions d'utilisations</a
+          >
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</html>
