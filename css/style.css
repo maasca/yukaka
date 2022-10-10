@@ -33,6 +33,10 @@ h1,
 h2 {
   color: rgba(8, 68, 8, 0.747);
 }
+#cardsContainer {
+  display: flex;
+  flex-direction: row;
+}
 .card {
   border: 2px solid rgba(0, 128, 0, 0.548);
   border-radius: 12px;
@@ -40,10 +44,10 @@ h2 {
   padding: 20px;
 }
 .card > img {
-  width: 20%;
+  width: 50%;
 }
 #imageProduit {
-  width: 20%;
+  width: 10%;
 }
 #tableContainer {
   margin-top: 20px;
@@ -91,16 +95,17 @@ footer {
     margin-right: auto;
   }
   .card > img {
-    width: 60%;
+    width: 50%;
   }
   #tableContainer {
+    margin-left: 10%;
     display: flex;
     flex-direction: row;
   }
   table {
     width: 100%;
   }
-  #imgProduit {
+  #imageProduit {
     width: 30%;
   }
 }

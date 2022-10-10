@@ -20,7 +20,6 @@ const donner = document.getElementById("donner");
 rechercher.addEventListener("click", search);
 
 function search() {
-  recherche.value.trim();
   const url =
     "https://world.openfoodfacts.org/api/v0/product/" +
     recherche.value +
@@ -46,66 +45,18 @@ function search() {
     .then(showResults);
 }
 function resultNutriscore() {
-  switch (nutri) {
-    case "a":
-      nutriscore.setAttribute("src", "./img/240px-Nutri-score-A.svg.png");
-      break;
-    case "b":
-      nutriscore.setAttribute("src", "./img/240px-Nutri-score-B.svg.png");
-      break;
-    case "c":
-      nutriscore.setAttribute("src", "./img/240px-Nutri-score-C.svg.png");
-      break;
-    case "d":
-      nutriscore.setAttribute("src", "./img/240px-Nutri-score-D.svg.png");
-      break;
-    case "e":
-      nutriscore.setAttribute("src", "./img/240px-Nutri-score-E.svg.png");
-      break;
-    default:
-      nutriscore.setAttribute("alt", "Nutriscore");
-  }
+  nutriscore.setAttribute(
+    "src",
+    "./img/240px-Nutri-score-" + nutri + ".svg.png"
+  );
 }
 
 function resultEcoscore() {
-  switch (eco) {
-    case "a":
-      ecoscore.setAttribute("src", "./img/Eco-score A.svg");
-      break;
-    case "b":
-      ecoscore.setAttribute("src", "./img/Eco-score B.svg");
-      break;
-    case "c":
-      ecoscore.setAttribute("src", "./img/Eco-score C.svg");
-      break;
-    case "d":
-      ecoscore.setAttribute("src", "./img/Eco-score D.svg");
-      break;
-    case "e":
-      ecoscore.setAttribute("src", "./img/Eco-score E.svg");
-      break;
-    default:
-      ecoscore.setAttribute("alt", "Ecoscore");
-  }
+  ecoscore.setAttribute("src", "./img/Eco-score " + eco + ".svg");
 }
 
 function resultNova() {
-  switch (nov) {
-    case "1":
-      nova.setAttribute("src", "./img/458px-NOVA_group_1.svg.png");
-      break;
-    case "2":
-      nova.setAttribute("src", "./img/1200px-NOVA_group_2.svg.png");
-      break;
-    case "3":
-      nova.setAttribute("src", "./img/1200px-NOVA_group_3.svg.png");
-      break;
-    case "4":
-      nova.setAttribute("src", "./img/640px-NOVA_group_4.svg.png");
-      break;
-    default:
-      nova.setAttribute("alt", "Nova");
-  }
+  nova.setAttribute("src", "./img/NOVA_group_" + nov + ".svg.png");
 }
 
 function showResults() {
